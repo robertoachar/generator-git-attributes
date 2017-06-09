@@ -1,0 +1,38 @@
+{
+  "name": "generator-git-attributes",
+  "version": "1.0.0",
+  "description": "Yeoman generator for .gitattributes",
+  "author": "Roberto Achar <robertoachar@gmail.com>",
+  "homepage": "https://github.com/robertoachar/generator-git-attributes#readme",
+  "keywords": [
+    "node-js"
+  ],
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "coverage": "jest --colors --coverage",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
+    "jest": "jest --colors --verbose",
+    "lint": "eslint src/**/*.js test/**/*.js",
+    "start": "nodemon src/index.js",
+    "test": "npm run lint && npm run jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertoachar/generator-git-attributes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robertoachar/generator-git-attributes/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "latest",
+    "coveralls": "latest",
+    "eslint": "latest",
+    "jest": "latest",
+    "nodemon": "latest"
+  },
+  "license": "MIT"
+}
